@@ -1,0 +1,2 @@
+# -dialogue-
+  If PixelGetColor(291,100) == $disconnectcolor  Then ; If disconnected i.e. Mission Systems Off       $missonsystems = 0       $timer = 0       MouseClick("left", 488, 98); untick log ascii       connect()    ElseIf $timer >= 3600 Then       Sleep(3000)       MouseClick("left", 486, 93); untick log ascii       Sleep(3000)       MouseClick("left", 486, 94); re-tick log ascii       Sleep(3000)       MouseClick("left", 601, 469); click save on file dialogue       $timer = 0    EndIf    Sleep(1000)    $timer = $timer + 1 WEnd
